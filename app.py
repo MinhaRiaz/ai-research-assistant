@@ -4,6 +4,11 @@ from crewai.tools import BaseTool
 from pydantic import BaseModel, Field
 from duckduckgo_search import DDGS
 
+# --- ADD THESE TWO LINES TO FIX THE GROQ CACHE ERROR ---
+import crewai.llms.cache as _crewai_cache
+_crewai_cache.mark_cache_breakpoint = lambda msg: msg
+# -------------------------------------------------------
+
 
 # -----------------------------
 # 1. DuckDuckGo search tool
