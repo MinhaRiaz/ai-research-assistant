@@ -80,7 +80,7 @@ def run_research(topic: str):
     api_key = get_groq_api_key()
 
     llm = LLM(
-        model="groq/openai/gpt-oss-120b",
+        model="groq/openai/gpt-oss-20b",
         api_key=api_key,
         temperature=0.2,
     )
