@@ -33,7 +33,7 @@ class DuckDuckGoSearchTool(BaseTool):
                 query,
                 region="wt-wt",
                 safesearch="moderate",
-                max_results=3,
+                max_results=2,
             )
 
             if not results:
