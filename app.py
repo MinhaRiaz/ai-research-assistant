@@ -2,7 +2,7 @@ import streamlit as st
 from crewai import Agent, Task, Crew, LLM
 from crewai.tools import BaseTool
 from pydantic import BaseModel, Field
-from ddgs import DDGS
+from duckduckgo_search import DDGS
 
 
 # -----------------------------
